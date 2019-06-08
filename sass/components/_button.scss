@@ -31,9 +31,18 @@
 		color: #777;
 
 		&::after {
-		background-color: $color-white;
+			background-color: $color-white;
 
 		}
+	}
+
+	&--grey {
+		background-color: $color-primary-dark;
+		color: $color-white;
+
+		&::after {
+			background-color: $color-primary-dark;
+		}	
 	}
 
 	&::after {

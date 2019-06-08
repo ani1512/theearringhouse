@@ -2,4 +2,42 @@
 	background-color: $color-grey-light-1;
 	padding: 25rem;
 	margin-top: -20vh;
+
+	@include respond(tab-port) {
+		padding: 22rem 0 18rem 0;
+	}
+}
+
+.section-products {
+	background-color: $color-primary-light;
+	padding: 20rem 0 15rem 0;
+	margin-top: 0;
+
+	@include respond(tab-port) {
+		padding: 12rem 0 12rem 0;
+	}
+
+
+	&__heading {
+		font-size: 3.5rem;
+		text-transform: uppercase;
+		font-weight: 700;
+		display: inline-block;
+		background-image: linear-gradient(to right, $color-primary-medium, $color-primary-dark);
+		-webkit-background-clip: text;
+		-moz-background-clip: text;
+		color: transparent;
+		letter-spacing: .2rem;
+		transition: all .2s;
+		@include respond(tab-port) {
+			font-size: 3rem;
+		}
+
+
+		&:hover {
+			transform: skewY(2deg) skewX(2deg) scale(1.1);
+			text-shadow: .5rem 1rem 2rem rgba($color-black, .2);
+
+		}
+	}
 }
